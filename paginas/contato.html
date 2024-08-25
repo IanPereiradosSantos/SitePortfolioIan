@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Contato</title>
+    <link rel="stylesheet" href="../estilos/padrao.css">
+    <link rel="stylesheet" href="../estilos/layout.css">
+    <link rel="stylesheet" href="../estilos/dropdown.css">
+    <link rel="stylesheet" href="../estilos/contato.css">
+    <link rel="stylesheet" href="../estilos/responsivo.css">
+    <link rel="icon" href="../imagens/contato.ico">
+    <script src="../scripts/contato.js" defer></script>
+</head>
+<body>
+    <header>
+        <figure id="logo">
+            <a href="../index.html">
+                <img src="../imagens/Logo.png" alt="Logo Portfolio">
+            </a>
+        </figure>
+        <nav>
+            <button class="menu">Menu</button>
+            <ul class="opcoes">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Entre em Contato</h2>
+        <form id="contato-form">
+            <fieldset>
+                <legend>Informações de Contato</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </fieldset>
+        </form>
+        <section id="resultados"></section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Portfolio Ian Pereira. Todos os direitos reservados.</p>
+        <ul class="links">
+            <li><a href="https://btv.ifsp.edu.br/" target="_blank">IFSP Boituva</a></li>
+            <li><a href="https://github.com/IanPereiradosSantos" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/ian-pereira-dos-santos/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

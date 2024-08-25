@@ -1,0 +1,65 @@
+@media (min-width: 992px) {
+    nav {
+        position: static;
+    }
+
+    .opcoes {
+        display: none;
+        position: static;
+        background-color: #0f684b;
+        border: 1px solid #03484c;
+        border-radius: 5px;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav:hover .opcoes {
+        display:block;
+    }
+}
+@media (max-width: 767px) {
+    .opcoes {
+        display: none;
+        position: absolute;
+        background-color: #0f684b;
+        border: 1px solid #03484c;
+        border-radius: 5px;
+        top: 100%;
+        right: 0;
+        width: 100%;
+    }
+
+    .opcoes li {
+        padding: 10px;
+    }
+
+    .opcoes li a {
+        display: block;
+        padding: 10px;
+    }
+
+    .menu {
+        background-color: #3b8952;
+        color: #ffffff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+        padding-bottom: 120px;
+    }
+
+    footer {
+        width: 100%;
+    }
+    nav:hover .opcoes {
+        display: inline-table;
+    }
+}
